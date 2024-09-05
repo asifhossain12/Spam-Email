@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Detection</title>
+</head>
+<body>
+    <h2>Spam Detection Form</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="email_text">Enter Email Text:</label><br>
+        <textarea id="email_text" name="email_text" rows="10" cols="50" placeholder="Paste the email text here"></textarea><br><br>
+        <input type="submit" value="Check Spam">
+    </form>
+</body>
+</html>
